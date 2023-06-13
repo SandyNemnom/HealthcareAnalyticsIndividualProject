@@ -12,20 +12,19 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #-------------------------------------------------------
 # Import Dataset
-Vaccination_PerCountry = pd.read_csv("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Immunization 2021.csv", encoding='latin1')
-Global_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='regional_global', encoding='latin1')
-BCG_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='BCG', encoding='latin1')
-DTP1_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='DTP1', encoding='latin1')
-DTP3_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='DTP3', encoding='latin1')
-HEPB3_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='HEPB3', encoding='latin1')
-HIB3_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='HIB3', encoding='latin1')
-MCV1_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='MCV1', encoding='latin1')
-MCV2_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='MCV2', encoding='latin1')
-POL3_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='POL3', encoding='latin1')
-PCV3_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='PCV3', encoding='latin1')
-ROTAC_PerCountry = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/Vaccines_per_Country_Year.xlsx", sheet_name='ROTAC', encoding='latin1')
-
-survey_data = pd.read_excel("C:/Users/HP/Desktop/AUB MSBA Courses/Healthcare Analytics/Individual Project/My project/surveydata.xlsx", sheet_name='Coverage_survey', encoding='latin1')
+Vaccination_PerCountry = pd.read_csv("Immunization 2021.csv", encoding='latin1')
+Global_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='regional_global', encoding='latin1')
+BCG_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='BCG', encoding='latin1')
+DTP1_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='DTP1', encoding='latin1')
+DTP3_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='DTP3', encoding='latin1')
+HEPB3_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='HEPB3', encoding='latin1')
+HIB3_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='HIB3', encoding='latin1')
+MCV1_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='MCV1', encoding='latin1')
+MCV2_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='MCV2', encoding='latin1')
+POL3_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='POL3', encoding='latin1')
+PCV3_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='PCV3', encoding='latin1')
+ROTAC_PerCountry = pd.read_excel("Vaccines_per_Country_Year.xlsx", sheet_name='ROTAC', encoding='latin1')
+survey_data = pd.read_excel("surveydata.xlsx", sheet_name='Coverage_survey', encoding='latin1')
 #-------------------------------------------------------
 # Set up the navigation menu
 nav_selection = st.sidebar.radio("Menu", ["Global Vaccination Coverage 2021", "Vaccination Coverage by Year & Region", "Vaccination Coverage by Age & Gender"])
